@@ -1,0 +1,86 @@
+.table:last-child{
+    background-color: red;
+}
+
+.plate, .bento, .apple, .sushi{
+    display: inline-block;
+    width: 100px;
+    border: 2px solid red;
+    margin: 10px;
+    height: 100px;
+}
+
+.apple, .sushi{
+    width: 20px;
+    height: 20px;
+}
+
+.altro{
+    border: 2px solid orchid;
+}
+.plate .apple{
+    background-color: turquoise;
+}
+
+.plate>.apple{
+    text-decoration: underline;
+}
+
+.plate:first-child{
+    background-color: yellowgreen;
+}
+
+.bento:last-child{
+    background-color: violet;
+}
+.plate + .apple{
+    background-color: red;
+}
+
+.bento ~ .apple{
+    border: 2px solid green;
+}
+
+.plate > .apple:first-child{
+    text-transform: uppercase;
+}
+
+.altro .apple:only-child{
+    background-color: yellow;
+}
+
+.altro .apple:last-child{
+    background-color: slategrey;
+}
+
+.altro .apple:nth-child(4){
+    border: 2px solid gold;
+}
+
+.sushi:first-of-type{
+    background-color: salmon;
+}
+
+.sushi:nth-of-type(even){
+    background-color: chartreuse;
+}
+
+.sushi:nth-of-type(3n+3){
+    text-decoration: line-through;
+}
+
+.bento:empty, .plate:empty{
+    background-color: rebeccapurple;
+}
+
+.nuovo>.apple:not(.big){
+    color: yellow;
+}
+
+.apple[for]{
+    color:red
+}
+
+.apple[for="Baglio"]{
+    text-decoration: line-through;
+}
